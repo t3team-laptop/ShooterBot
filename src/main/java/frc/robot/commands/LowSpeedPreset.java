@@ -24,7 +24,7 @@ public class LowSpeedPreset extends CommandBase {
   @Override
   public void execute() {
 
-    shooter.shoot(.5);
+    shooter.setOutput(.5);
   }
 
   // Called once the command ends or is interrupted.

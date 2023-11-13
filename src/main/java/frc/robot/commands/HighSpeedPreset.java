@@ -23,7 +23,7 @@ public class HighSpeedPreset extends CommandBase {
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    shooter.shoot(1);
+    shooter.setOutput(1);
   }
 
   // Called once the command ends or is interrupted.

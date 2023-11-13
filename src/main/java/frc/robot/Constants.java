@@ -21,5 +21,14 @@ public static final int FRONT_LEFT_MOTOR = 0;
 public static final int FRONT_RIGHT_MOTOR = 1;
 public static final int BACK_LEFT_MOTOR = 2;
 public static final int BACK_RIGHT_MOTOR = 3;
+
+public static final int ARM_LEFT_MOTOR1 = 10;
+public static final int ARM_LEFT_MOTOR2 = 11;
+public static final int ARM_RIGHT_MOTOR1 = 12;
+public static final int ARM_RIGHT_MOTOR2 = 13;
+
+public static final int SHOOTER_LEFT_MOTOR = 20;
+public static final int SHOOTER_RIGHT_MOTOR = 21;
+
 public static final double stickDeadband = .1;
 }
