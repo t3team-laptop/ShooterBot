@@ -50,7 +50,7 @@ public class RobotContainer {
     lowSpeedPreset = new LowSpeedPreset(shooter);
 
     driveTrain.setDefaultCommand(new Drive(driveTrain, () -> driver.getRawAxis(speedAxis), () -> driver.getRawAxis(rotationAxis)));
-    arm.setDefaultCommand(new ArmPivot(arm, -1));
+    arm.setDefaultCommand(new ArmPivot(arm, 1));
 
     A = new JoystickButton(driver, 1);
     B = new JoystickButton(driver, 2);
@@ -79,7 +79,8 @@ public class RobotContainer {
 
    A.onTrue(lowSpeedPreset);
    Y.onTrue(highSpeedPreset);
-   LB.whileTrue(armPivot);
+   LB.whileTrue(new ArmPivot(arm, 1));
+   RB.whileTrue(new ArmPivot(arm, -1));
 
   }
 
